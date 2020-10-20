@@ -1,0 +1,61 @@
+@import '../../utils.scss';
+
+.competition {
+  color: $c-white;
+  background: black;
+  opacity: 0.8;
+}
+
+.container {
+  @extend %container;
+  padding: 100px;
+  font-size: 24px;
+}
+
+.heading {
+  @extend %heading;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.textAligner {
+  margin-top: 60px;
+  display: block;
+  text-align: center;
+  font-family: $heading-font;
+  font-size: 40px;
+}
+
+.totermsLink {
+  @extend %ifo-link;
+  font-size: 40px;
+  transition: 0.5s;
+  
+  &:after {
+    transform: none;
+  }
+
+  &:hover:after {
+    background: $c-orange;
+  }
+}
+
+.professionsItem {
+  margin-top: 50px;
+  list-style-position: inside;
+}
+
+.programItem {
+  list-style-position: inside;
+  margin: 5px 0 0 20px;
+
+  &:first-child {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 50px 0;
+  }
+}

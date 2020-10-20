@@ -1,0 +1,31 @@
+@import '../../utils.scss';
+
+.promo {
+  background: url(../../images/promo_background.jpg) center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container {
+  @extend %container;
+  padding-top: 45vh;
+}
+
+.heading {
+  color: $c-white;
+  text-align: center;
+  font-size: 94px;
+  font-family: "Dancing Script", cursive;
+}
+
+@media (max-width: 920px) {
+  .promo {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 520px) {
+  .heading {
+    font-size: 55px;
+  }
+}

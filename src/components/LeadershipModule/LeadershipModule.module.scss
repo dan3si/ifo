@@ -1,0 +1,40 @@
+@import '../../utils.scss';
+
+.leadership {
+  position: relative; 
+}
+
+.darker {
+  @extend %darker;
+  background: #d1c8bc;
+}
+
+.container {
+  @extend %container;
+  padding: 20px 0 100px;
+}
+
+.heading {
+  @extend %heading;
+  text-align: center;
+}
+
+.cardwrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+@media (max-width: 1150px) {
+  .cardwrapper {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cardwrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}

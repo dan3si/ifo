@@ -1,0 +1,93 @@
+@import '../../utils.scss';
+
+.request {
+  position: relative;
+}
+
+.darker {
+  @extend %darker;
+  opacity: 0.8;
+  background: black;
+}
+
+.container {
+  position: relative;
+  margin-left: auto;
+  max-width: calc(50% + 575px);
+  padding: 100px 200px;
+  background: $c-light-black;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.heading {
+  @extend %heading;
+  margin-bottom: 30px;
+  color: $c-white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+%inputBase {
+  margin-top: 30px;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid $c-white;
+  outline: none;
+  color: $c-white;
+  transition: 0.3s;
+
+  &:focus {
+    border-color: $c-orange;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border-color: red;
+  }
+}
+
+.inputString {
+  @extend %inputBase;
+}
+
+.inputTextarea {
+  @extend %inputBase;
+  height: 200px;
+  resize: none;
+}
+
+.submit {
+  margin-top: 60px;
+  height: 55px;
+  width: 225px;
+  border-radius: 8px;
+  border: none;
+  background: $c-orange;
+  cursor: pointer;
+  color: $c-white;
+  transition: 0.3s;
+  font-size: 20px;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 1150px) {
+  .container {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+  }
+
+  .form {
+    width: 80vw;
+  }
+}
