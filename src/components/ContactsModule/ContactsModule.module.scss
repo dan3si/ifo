@@ -1,9 +1,14 @@
 @import '../../utils.scss';
 
 .contacts {
+  position: relative;
   color: $c-white;
-  background: black;
+}
+
+.darker {
+  @extend %darker;
   opacity: 0.8;
+  background: black;
 }
 
 .container {
@@ -14,12 +19,17 @@
 
 .heading {
   @extend %heading;
+  opacity: 0.8;
 }
 
 .contactsWrapper {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+}
+
+.textWrapper {
+  opacity: 0.8;
 }
 
 .phone {

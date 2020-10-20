@@ -18,6 +18,15 @@
   margin-bottom: 50px;
 }
 
+.link {
+  color: $c-white;
+  transition: 0.3s;
+
+  &:hover {
+    color: $c-orange;
+  }
+}
+
 .textAligner {
   margin-top: 60px;
   display: block;
