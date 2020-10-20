@@ -4,11 +4,12 @@ import styles from './ContactsModule.module.scss';
 export const Contacts = () => {
   return (
     <section className={styles.contacts} id="contacts">
+      <div className={styles.darker}/>
       <div className={styles.container}>
-        <h2  className={styles.heading}>Контакти</h2>
-        <div  className={styles.contactsWrapper}>
-          <div  className={styles.textWrapper}>
-            <div  className={styles.email}>
+        <h2 className={styles.heading}>Контакти</h2>
+        <div className={styles.contactsWrapper}>
+          <div className={styles.textWrapper}>
+            <div className={styles.email}>
               <a href="mailto:ifo.kyiv@gmail.com"  className={styles.link}>ifo.kyiv@gmail.com</a>
             </div>
             <div  className={styles.phone}>

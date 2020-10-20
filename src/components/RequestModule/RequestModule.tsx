@@ -4,7 +4,7 @@ import styles from './RequestModule.module.scss';
 export const Request = () => {
   return (
     <section className={styles.request} id="request">
-      <div className={styles.darker}></div>
+      <div className={styles.darker}/>
       <div className={styles.container}>
         <h2 className={styles.heading}>Подати заявку</h2>
         <form
