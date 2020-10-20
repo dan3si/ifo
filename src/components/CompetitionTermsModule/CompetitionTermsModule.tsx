@@ -105,7 +105,7 @@ export const CompetitionTerms = () => {
                 </li>
                 <li className={styles.programItem}>
                   Один з концертів на вибір кандидата: А. К. Діттерсдорф, Й. Б. Ванхаль,
-                  Дж. Ботезіні N2 h-moll (експозиція Іч. та каденція до Iч)
+                  Дж. Боттезіні N2 h-moll (експозиція Іч. та каденція до Iч)
                 </li>
                 <li className={styles.programItem}>
                   Віртуозний твір
