@@ -1,13 +1,13 @@
 import React from 'react';
 import { Header } from 'components/HeaderModule';
 import { Footer } from 'components/FooterModule';
-import { CompetitionTerms } from 'components/CompetitionTermsModule';
+import { CompetitionRequirements } from 'components/CompetitionRequirementsModule';
 
-export const CompetitionTermsPage = () => {
+export const CompetitionRequirementsPage = () => {
   return (
     <>
       <Header />
-      <CompetitionTerms />
+      <CompetitionRequirements />
       <Footer />
     </>
   );

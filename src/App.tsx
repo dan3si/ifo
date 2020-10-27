@@ -1,16 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { MainPage } from 'pages/MainPage';
-import { CompetitionTermsPage } from 'pages/CompetitionTermsPage';
+import { CompetitionRequirementsPage } from 'pages/CompetitionRequirementsPage';
+import { LangProvider } from 'contexts/LangContext';
 
 function App() {
-  useEffect(
-    () => {
-      document.title = 'International Freedom Orchestra';
-    },
-    [],
-  );
-
   return (
     <>
       <head>
@@ -22,11 +16,13 @@ function App() {
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet" />
       </head>
-      
-      <BrowserRouter>
-        <Route path="/" exact component={MainPage} />
-        <Route path="/competition" exact component={CompetitionTermsPage} />
-      </BrowserRouter>    
+
+      <LangProvider>
+        <BrowserRouter>
+          <Route path="/" exact component={MainPage} />
+          <Route path="/competition" exact component={CompetitionRequirementsPage} />
+        </BrowserRouter>
+      </LangProvider>
     </>
   );
 }

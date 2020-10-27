@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './RequestModule.module.scss';
+import { LangContext } from 'contexts/LangContext';
 
 export const Request = () => {
+  const { t } = useContext(LangContext);
+
   return (
     <section className={styles.request} id="request">
       <div className={styles.darker}/>
       <div className={styles.container}>
-        <h2 className={styles.heading}>Подати заявку</h2>
+        <h2 className={styles.heading}>{t('request_heading')}</h2>
         <form
           action="https://formspree.io/f/xyybeejy"
           method="POST"
@@ -17,7 +20,7 @@ export const Request = () => {
             name="name"
             type="text"
             autoComplete="off"
-            placeholder="Ваше iм'я:"
+            placeholder={t('request_name_placeholder')}
             required
           />
           <input
@@ -25,7 +28,7 @@ export const Request = () => {
             name="email"
             type="email"
             autoComplete="off"
-            placeholder="Ваш email:"
+            placeholder={t('request_email_placeholder')}
             required
           />
           <input
@@ -33,22 +36,22 @@ export const Request = () => {
             name="phone"
             type="text"
             autoComplete="off"
-            placeholder="Ваш телефон:"
+            placeholder={t('request_phone_placeholder')}
             required
           />
           <textarea
             className={styles.inputTextarea}
-            name="link"
-            placeholder="Вашi вiдео:"
+            name="links"
+            placeholder={t('request_links_placeholder')}
             required
           />
           <textarea
             className={styles.inputTextarea}
             name="cv"
-            placeholder="Розкажiть про себе:"
+            placeholder={t('request_cv_placeholder')}
             required
           />
-          <button className={styles.submit} type="submit">Вiдправити</button>
+          <button className={styles.submit} type="submit">{t('request_submit')}</button>
         </form>
       </div>
     </section>

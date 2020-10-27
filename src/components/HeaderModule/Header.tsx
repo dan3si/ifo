@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import cn from 'classnames';
 import styles from './HeaderModule.module.scss';
 import logo from 'images/logo.png';
 import { Link } from 'react-router-dom';
 import scrollToBlock from 'functions/ScrollToBlock';
+import { LangContext } from 'contexts/LangContext';
 
 export const Header = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const toggleMenu = () => setMenuIsOpen(!menuIsOpen);
-
+  const { t, setLang } = useContext(LangContext);
+  
   return (
     <header className={cn({
       [styles.menuIsOpen]: menuIsOpen,
@@ -39,6 +41,15 @@ export const Header = () => {
           </Link>
           
           <nav className={styles.nav}>
+            <select
+              name="langSetter"
+              id="langSetter"
+              onChange={(e) => setLang(e.target.value)}
+            >
+              <option value="en">English</option>
+              <option value="ua">Українська</option>
+            </select>
+
             <Link
               className={styles.navLink}
               to="/"
@@ -47,7 +58,7 @@ export const Header = () => {
                 toggleMenu();
               }}
             >
-              Про нас
+              {t('headerLink_about')}
             </Link>
 
             <Link
@@ -58,7 +69,7 @@ export const Header = () => {
                 toggleMenu();
               }}
             >
-              Наша команда
+              {t('headerLink_leadership')}
             </Link>
 
             <Link
@@ -69,7 +80,7 @@ export const Header = () => {
                 toggleMenu();
               }}
             >
-              Конкурс
+              {t('headerLink_competition')}
             </Link>
 
             <Link
@@ -80,7 +91,7 @@ export const Header = () => {
                 toggleMenu();
               }}
             >
-              Подати заявку
+              {t('headerLink_request')}
             </Link>
 
             <Link
@@ -91,7 +102,7 @@ export const Header = () => {
                 toggleMenu();
               }}
             >
-              Контакти
+              {t('headerLink_contacts')}
             </Link>
           </nav>
         </div>
