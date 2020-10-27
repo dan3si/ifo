@@ -29,13 +29,6 @@ export const Leadership = () => {
             position={t('leadership_zhadko_position')}
             description={t('leadership_zhadko_description')}
           />
-
-          <LeadershipCard
-            imgSRC={MyroslavaKotorovychIMG}
-            name={t('leadership_kotorovych_name')}
-            position={t('leadership_kotorovych_position')}
-            description={t('leadership_kotorovych_description')}
-          />
           
           <LeadershipCard
             imgSRC={DmytroTavanetsIMG}
