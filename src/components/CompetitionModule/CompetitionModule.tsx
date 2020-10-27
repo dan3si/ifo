@@ -1,27 +1,29 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './CompetitionModule.module.scss';
 import { Link } from 'react-router-dom';
 import scrollToBlock from 'functions/ScrollToBlock';
+import { LangContext } from 'contexts/LangContext';
 
 export const Competition = () => {
+  const { t } = useContext(LangContext);
+
   return (
     <section className={styles.competition} id="competition">
       <div className={styles.container}>
-        <h2 className={styles.heading}>Конкурс</h2>
+        <h2 className={styles.heading}>{t('competition_heading')}</h2>
         <p className={styles.paragraph}>
-          До уваги виконавців на струнно-смичкових інструментах:
+          {t('competition_paragraph_part1')}
           <br/><br/>
-          Новостворений міжнародний камерний оркестр <strong>International Freedom Orchestra</strong> оголошує
-          конкурсний набір артистів віком 18-33 років,
-          стан здоров'я яких дозволяє вести активну гастрольну діяльність,
-          у групи 1 та 2 скрипок, альтів, віолончелей та контрабасів.
+          {t('competition_paragraph_part2')}
+          <strong>{t('competition_ifo')}</strong>
+          {t('competition_paragraph_part3')}
           <br/><br/><br/>
           <Link
-            className={styles.totermsLink}
+            className={styles.toRequirementsLink}
             to="/competition"
-            onClick={() => scrollToBlock('competitionTerms')}
+            onClick={() => scrollToBlock('competitionRequirements')}
           >
-            Умови участі у конкурсному відборі
+            {t('competition_toRequirements')}
           </Link>
         </p>
       </div>

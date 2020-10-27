@@ -1,66 +1,33 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './AboutModule.module.scss';
+import { LangContext } from 'contexts/LangContext';
 
 export const About = () => {
+  const { t } = useContext(LangContext);
+
   return (
     <section className={styles.about} id="about">
       <div className={styles.container}>
-        <h2 className={styles.heading}>Про нас</h2>
+        <h2 className={styles.heading}>{t('about_heading')}</h2>
         <p className={styles.paragraph}>
-          <strong>Міжнародний оркестр Свободи / International Freedom Orchestra</strong> – це новостворений
-          молодіжний колектив, що складатиметься з високопрофесійних, творчих,
-          ініціативних та амбітних музикантів  усіх регіонів України та інших держав,
-          історія яких тісно пов'язана з боротьбою за свободу. Він символізуватиме
-          дружбу між народами, співпрацю між державами та прагнення до свободи й
-          демократії в країнах Східної Європи. Оркестр уособлюватиме ідею зміцнення
-          міждержавних зв'язків через культуру, займатиметься промоцією України
-          як країни, де понад усе цінують свободу.
+          <strong>{t('about_ifo')}</strong>
+          {t('about_paragraph1')}
         </p>
-
-        <p className={styles.paragraph}>
-          Основна тема репертуару колективу – свобода. Зокрема, це будуть твори українських
-          та зарубіжних композиторів, створені в умовах чи внаслідок боротьби за свободу.
-          Інший важливий напрямок оркестру – соціально-культурні демократичні перетворення
-          ХХ та ХХІ століть, в тому числі накшталт відомих іноземних аналогів – «Wind of Change»
-          («Вітер змін»), що сприятиме зміцненню авторитету та популяризації України в світі.
-        </p>
-
-        <h4 className={styles.textHeading}>План на перший рік роботи:</h4>
-
+        <p className={styles.paragraph}>{t('about_paragraph2')}</p>
+        <h4 className={styles.textHeading}>{t('about_textheading')}</h4>
         <ul className={styles.list}>
-          <li className={styles.listItem}>
-            створення ряду тематичних концертних програм, спрямованих на промоцію України та ідеї свободи, єдності й братерства у світі;
-          </li>
-          <li className={styles.listItem}>
-            проведення благодійних концертів української музики з творів композиторів-представників усіх регіонів України;
-          </li>
-          <li className={styles.listItem}>
-            проведення благодійних культурно-мистецьких акцій у регіонах України та за її межами;
-          </li>
-          <li className={styles.listItem}>
-            створення серії відеолекцій про українську культуру, музику та її історію (з представленням
-            усіх регіонів України, в тому числі кримсько-татарського);
-          </li>
-          <li className={styles.listItem}>
-            регулярні гастрольні виступи в усіх областях України та за кордоном, де просуватимуться ідеї демократії та свободи;
-          </li>
-          <li className={styles.listItem}>
-            культурно-освітня й патріотично-виховна робота з дітьми та молоддю.
-          </li>
-          <li className={styles.listItem}>
-            Серед ключових дат історії у 2020-2021 роках, пов’язаних з діяльністю оркестру, будуть:
-          </li>
-          <li className={styles.listItem}>
-            30-річчя об’єднання Німеччини;
-          </li>
-          <li className={styles.listItem}>
-            30-річчя проголошення / відновлення незалежності країн колишніх СРСР та Югославії, зокрема, України;
-          </li>
-          <li className={styles.listItem}>
-            10 річниця Арабської весни.
-          </li>
+          <li className={styles.listItem}>{t('about_listItem1')}</li>
+          <li className={styles.listItem}>{t('about_listItem2')}</li>
+          <li className={styles.listItem}>{t('about_listItem3')}</li>
+          <li className={styles.listItem}>{t('about_listItem4')}</li>
+          <li className={styles.listItem}>{t('about_listItem5')}</li>
+          <li className={styles.listItem}>{t('about_listItem6')}</li>
+          <li className={styles.listItem}>{t('about_listItem7')}</li>
+          <li className={styles.listItem}>{t('about_listItem8')}</li>
+          <li className={styles.listItem}>{t('about_listItem9')}</li>
+          <li className={styles.listItem}>{t('about_listItem10')}</li>
         </ul>
       </div>
     </section>
-  )
+  );
 }

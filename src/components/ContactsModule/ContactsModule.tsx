@@ -1,21 +1,24 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './ContactsModule.module.scss';
+import { LangContext } from 'contexts/LangContext';
 
 export const Contacts = () => {
+  const { t } = useContext(LangContext);
+
   return (
     <section className={styles.contacts} id="contacts">
       <div className={styles.darker}/>
       <div className={styles.container}>
-        <h2 className={styles.heading}>Контакти</h2>
+        <h2 className={styles.heading}>{t('contacts_heading')}</h2>
         <div className={styles.contactsWrapper}>
           <div className={styles.textWrapper}>
             <div className={styles.email}>
               <a href="mailto:ifo.kyiv@gmail.com"  className={styles.link}>ifo.kyiv@gmail.com</a>
             </div>
-            <div  className={styles.phone}>
+            <div className={styles.phone}>
               <a href="tel: +38 (068) 703-31-83"  className={styles.link}>+38 (068) 703-31-83</a>
             </div>
-            <div  className={styles.address}>м. Київ, вул. Ярославів Вал, 14д</div>
+            <div className={styles.address}>{t('contacts_address')}</div>
           </div>
 
           <iframe
