@@ -9,7 +9,7 @@ import { LangContext } from 'contexts/LangContext';
 export const Header = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const toggleMenu = () => setMenuIsOpen(!menuIsOpen);
-  const { t, setLang } = useContext(LangContext);
+  const { t, setLang, value } = useContext(LangContext);
   
   return (
     <header className={cn({
@@ -45,6 +45,7 @@ export const Header = () => {
               name="langSetter"
               id="langSetter"
               onChange={(e) => setLang(e.target.value)}
+              value={value}
             >
               <option value="en">English</option>
               <option value="ua">Українська</option>
