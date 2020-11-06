@@ -1,0 +1,83 @@
+@import '../../utils.scss';
+
+.events {
+  position: relative;
+}
+
+.darker {
+  @extend %darker;
+  background: $c-white;
+}
+
+.container {
+  @extend %container;
+  padding: 100px 150px;
+  font-size: 24px;
+}
+
+.heading {
+  @extend %heading;
+  text-align: center;
+}
+
+.eventWrapper {
+  display: flex;
+  margin-top: 70px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid $c-light-black;
+}
+
+.imageWrapper {
+  flex-shrink: 0;
+  margin-right: 30px;
+  overflow: hidden;
+}
+
+.eventImage {
+  width: 250px;
+  transition: 1s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.title {
+  @extend %ifo-link;
+  color: black;
+  font-size: 38px;
+
+  &:after {
+    background: black
+  }
+}
+
+.eventDescription {
+  margin-top: 30px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 630px) {
+  .container {
+    padding: 50px 0;
+  }
+
+  .eventWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imageWrapper {
+    margin: 0;
+  }
+
+  .title {
+    text-align: center;
+    margin-top: 30px;
+  }
+}

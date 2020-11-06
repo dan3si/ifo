@@ -1,22 +1,34 @@
 import React from 'react';
 import styles from './LeadershipCard.module.scss';
+import { Link } from 'react-router-dom';
+import scrollToBlock from 'global/ScrollToBlock';
 
 interface Props {
-  imgSRC: string,
-  name: string,
-  position: string,
-  description: string,
+  imgSRC: string;
+  name: string;
+  position: string;
+  description: string;
+  linkTo: string;
 }
 
-export const LeadershipCard = ({ imgSRC, name, position, description }: Props) => {
+export const LeadershipCard = ({ imgSRC, name, position, description, linkTo }: Props) => {
   return (
     <div className={styles.card}>
       <div className={styles.imageWrapper}>
-        <img src={imgSRC} alt={name}/>
+        <Link
+          to={linkTo}
+          onClick={() => scrollToBlock('personInfo')}
+        >
+          <img src={imgSRC} alt={name}/>
+        </Link>
       </div>
-      <div className={styles.name}>
+      <Link
+        className={styles.name}
+        to={linkTo}
+        onClick={() => scrollToBlock('personInfo')}
+      >
         {name}
-      </div>
+      </Link>
       <div className={styles.position}>
         {position}
       </div>

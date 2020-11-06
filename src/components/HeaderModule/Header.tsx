@@ -3,8 +3,8 @@ import cn from 'classnames';
 import styles from './HeaderModule.module.scss';
 import logo from 'images/logo.png';
 import { Link } from 'react-router-dom';
-import scrollToBlock from 'functions/ScrollToBlock';
-import { LangContext } from 'contexts/LangContext';
+import scrollToBlock from 'global/ScrollToBlock';
+import { LangContext } from 'global/LangContext';
 
 export const Header = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -42,13 +42,14 @@ export const Header = () => {
           
           <nav className={styles.nav}>
             <select
+              className={styles.langSetter}
               name="langSetter"
               id="langSetter"
               onChange={(e) => setLang(e.target.value)}
               value={value}
             >
-              <option value="en">English</option>
-              <option value="ua">Українська</option>
+              <option className={styles.langSetter__option} value="en">English</option>
+              <option className={styles.langSetter__option} value="ua">Українська</option>
             </select>
 
             <Link
