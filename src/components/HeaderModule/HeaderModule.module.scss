@@ -58,6 +58,24 @@
   @extend %logo;
 }
 
+.langSetter {
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  font-weight: bold;
+  color: $c-white;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    color: $c-orange;
+  }
+}
+
+.langSetter__option {
+  background: $c-light-black;
+}
+
 .navLink {
   @extend %ifo-link;
   font-size: 24px;

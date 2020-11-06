@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import styles from './CompetitionModule.module.scss';
 import { Link } from 'react-router-dom';
-import scrollToBlock from 'functions/ScrollToBlock';
-import { LangContext } from 'contexts/LangContext';
+import scrollToBlock from 'global/ScrollToBlock';
+import { LangContext } from 'global/LangContext';
 
 export const Competition = () => {
   const { t } = useContext(LangContext);

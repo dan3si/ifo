@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import styles from './RequestModule.module.scss';
-import { LangContext } from 'contexts/LangContext';
+import { LangContext } from 'global/LangContext';
 
 export const Request = () => {
   const { t } = useContext(LangContext);

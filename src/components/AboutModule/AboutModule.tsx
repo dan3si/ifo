@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import styles from './AboutModule.module.scss';
-import { LangContext } from 'contexts/LangContext';
+import { LangContext } from 'global/LangContext';
 
 export const About = () => {
   const { t } = useContext(LangContext);
