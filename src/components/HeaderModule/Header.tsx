@@ -54,6 +54,17 @@ export const Header = () => {
 
             <Link
               className={styles.navLink}
+              to="/events"
+              onClick={() => {
+                scrollToBlock('events');
+                toggleMenu();
+              }}
+            >
+              {t('headerLink_events')}
+            </Link>
+
+            <Link
+              className={styles.navLink}
               to="/"
               onClick={() => {
                 scrollToBlock('about');
@@ -83,17 +94,6 @@ export const Header = () => {
               }}
             >
               {t('headerLink_competition')}
-            </Link>
-
-            <Link
-              className={styles.navLink}
-              to="/"
-              onClick={() => {
-                scrollToBlock('request');
-                toggleMenu();
-              }}
-            >
-              {t('headerLink_request')}
             </Link>
 
             <Link
