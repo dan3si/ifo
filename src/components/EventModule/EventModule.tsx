@@ -30,7 +30,9 @@ export const Event = ({ eventId }: Props) => {
           src={`${API_URL}/events/images/${eventId}`}
           alt={event.title}
         />
-        <p className={styles.paragraph}>{event.description}</p>
+        {event.description
+        .split('\n')
+        .map((text: string) => <p className={styles.paragraph}>{text}</p>)}
       </div>
     </section>
   );
