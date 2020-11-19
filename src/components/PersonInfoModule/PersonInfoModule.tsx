@@ -23,8 +23,9 @@ export const PersonInfo = ({ name }: Props) => {
         </div>
 
         <h2 className={styles.heading}>{t(`personInfo_${name}_name`)}</h2>
-        <p className={styles.paragraph}>{t(`personInfo_${name}_text_firstPart`)}</p>
-        <p className={styles.paragraph}>{t(`personInfo_${name}_text_lastPart`)}</p>
+        {t(`personInfo_${name}_text`)
+        .split('\n')
+        .map((text: string) => <p className={styles.paragraph}>{text}</p>)}
       </div>
     </section>
   );

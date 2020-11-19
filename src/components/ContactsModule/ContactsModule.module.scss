@@ -50,6 +50,23 @@
   margin-top: 20px;
 }
 
+.socialsWrapper {
+  margin-top: 30px;
+}
+
+.linkFacebook {
+  display: block;
+  height: 46px;
+  width: 46px;
+  background: url(../../images/socials/facebook.png) no-repeat center / 100%;
+  border-radius: 100%;
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: 0 0 20px #3b5998;
+  }
+}
+
 .map {
   height: 350px;
   width: 350px;
