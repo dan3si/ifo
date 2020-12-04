@@ -1,0 +1,59 @@
+@import '../../../utils.scss';
+
+.darker {
+  position: fixed;
+  @extend %darker;
+  background: #000;
+  opacity: 0;
+  transition: 1s;
+}
+
+.darkerIsVisible {
+  opacity: 0.7;
+}
+
+.popup {
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  background: $c-white;
+  opacity: 0.96;
+  transform: translate(-50%);
+  max-width: 600px;
+  padding: 20px;
+  z-index: 1;
+  transition: 1s;
+  border-radius: 4px;
+}
+
+.popupIsVisible {
+  top: 30%;
+}
+
+.heading {
+  @extend %heading;
+  text-align: center;
+}
+
+.text {
+  font-size: 20px;
+  margin-top: 48px;
+}
+
+.close {
+  display: block;
+  margin: 60px auto 0;
+  height: 55px;
+  width: 225px;
+  border-radius: 8px;
+  border: none;
+  background: $c-orange;
+  cursor: pointer;
+  color: $c-white;
+  transition: 0.3s;
+  font-size: 20px;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
