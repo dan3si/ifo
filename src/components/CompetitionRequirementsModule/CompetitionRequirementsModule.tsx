@@ -83,7 +83,7 @@ export const CompetitionRequirements = () => {
                   {t('competitionRequirements_programItem_cello_4')}
                 </li>
                 <li className={styles.programItem}>
-                 {t('competitionRequirements_programItem_cello_5')}
+                {t('competitionRequirements_programItem_cello_5')}
                 </li>
               </ol>
             </li>
@@ -112,5 +112,5 @@ export const CompetitionRequirements = () => {
         </p>
       </div>
     </section>
-  )
+  );
 }

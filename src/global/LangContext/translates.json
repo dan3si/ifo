@@ -303,6 +303,18 @@
     "en": "Sight-reading",
     "ua": "Читання з листа"
   },
+  "stopCompetitionPopup_heading": {
+    "en": "Dear friends!",
+    "ua": "Шановні друзі!"
+  },
+  "stopCompetitionPopup_text": {
+    "en": "Due to the deteriorating epidemiological situation in Ukraine, we are forced to postpone the competition. All submitted applications are valid, the acceptance of applications has been extended indefinitely. We hope for your understanding and please follow the current information on the site.",
+    "ua": "У зв'язку з погіршенням епідеміологічної ситуації в Україні ми змушені відтермінувати проведення конкурсу. Всi поданi заявки дiйснi, прийом заявок продовжено на невизначений термiн. Сподіваємося на ваше розуміння й просимо слідкувати за актуальною інформацією на сайті."
+  },
+  "stopCompetitionPopup_button_text": {
+    "en": "Agreed",
+    "ua": "Зрозумiло"
+  },
   "personInfo_oles_yasko_name": {
     "en": "Oles Yasko",
     "ua": "Олесь Ясько"
