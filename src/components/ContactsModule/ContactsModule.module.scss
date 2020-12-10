@@ -58,12 +58,17 @@
   display: block;
   height: 46px;
   width: 46px;
-  background: url(../../images/socials/facebook.png) no-repeat center / 100%;
   border-radius: 100%;
+  overflow: hidden;
   transition: 0.3s;
 
   &:hover {
     box-shadow: 0 0 20px #3b5998;
+  }
+
+  .facebookLogo {
+    height: 100%;
+    width: 100%;
   }
 }
 
