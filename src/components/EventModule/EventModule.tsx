@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './EventModule.module.scss';
 import API_URL from 'global/API';
 
@@ -17,8 +17,7 @@ export const Event = ({ eventId }: Props) => {
     fetch(`${API_URL}/events/${eventId}`)
       .then(res => res.json())
       .then(data => setEvent(data));
-  },
-  []);
+  }, [eventId]);
 
   return (
     <section className={styles.event} id="event">

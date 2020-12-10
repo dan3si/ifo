@@ -5,17 +5,11 @@ const contextObject: any = null;
 export const LangContext = React.createContext(contextObject);
 
 export const LangProvider = ({ children }: { children: React.ReactNode }) => {
-  const cookieLang = document.cookie
-    .split(';')
-    .find(((el: string) => el.includes('lang')))
-    ?.split('=')[1];
+  const [lang, setLang] = useState(localStorage.lang || 'ua');
 
-  const [lang, setLang] = useState(cookieLang || 'ua');
-
-  useEffect(() => {
-    document.cookie = `lang=${lang}; expires=Tue, 19 Jan 2038 03:14:07 GMT`;
-  },
-  [lang]
+  useEffect(
+    () => localStorage.setItem('lang', lang),
+    [lang],
   );
 
   const t =  (code: string) => {

@@ -7,7 +7,7 @@ import { Competition } from 'components/CompetitionModule';
 import { Request } from 'components/RequestModule';
 import { Contacts } from 'components/ContactsModule';
 import { Footer } from 'components/FooterModule';
-import { StopCompetitionPopup } from '../../components/StopCompetitionPopup';
+import { StopCompetitionPopup } from 'components/StopCompetitionPopup';
 
 export const MainPage = () => {
   return (

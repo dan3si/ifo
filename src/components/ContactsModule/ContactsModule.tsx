@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import styles from './ContactsModule.module.scss';
 import { LangContext } from 'global/LangContext';
+import facebookLogo from '../../images/socials/facebook.png';
 
 export const Contacts = () => {
   const { t } = useContext(LangContext);
@@ -24,7 +25,14 @@ export const Contacts = () => {
                 className={styles.linkFacebook}
                 href="https://www.facebook.com/InternationalFreedomOrchestra/?fref=mentions"
                 target="blank"
-              />
+                title="facebook"
+              >
+                <img
+                  className={styles.facebookLogo}
+                  src={facebookLogo}
+                  alt="facebook logo"
+                />
+              </a>
             </div>
           </div>
         
@@ -34,6 +42,7 @@ export const Contacts = () => {
             allowFullScreen
             aria-hidden="false"
             tabIndex={0}
+            title="address"
             className={styles.map}
           />
         </div>
