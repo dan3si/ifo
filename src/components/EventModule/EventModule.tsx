@@ -11,6 +11,7 @@ export const Event = ({ eventId }: Props) => {
     id: '',
     title: '',
     description: '',
+    imagesCount: 0,
   });
 
   useEffect(() => {
@@ -24,14 +25,30 @@ export const Event = ({ eventId }: Props) => {
       <div className={styles.darker}/>
       <div className={styles.container}>
         <h2 className={styles.heading}>{event.title}</h2>
-        <img
-          className={styles.image}
-          src={`${API_URL}/events/images/${eventId}`}
-          alt={event.title}
-        />
+
         {event.description
-        .split('\n')
-        .map((text: string) => <p className={styles.paragraph}>{text}</p>)}
+          .split('\n')
+          .map(
+            (text: string) => (
+              <p
+                className={styles.paragraph}
+                key={event.id}
+              >
+                {text}
+              </p>
+            )
+          )
+        }
+        
+        {new Array(event.imagesCount).fill('')
+          .map((el, imageID) => (
+            <img
+              className={styles.image}
+              src={`${API_URL}/events/images/${eventId}/${imageID + 1}`}
+              alt={event.title}
+            />
+          ))
+        }
       </div>
     </section>
   );

@@ -37,3 +37,10 @@
     padding: 50px 0;
   }
 }
+
+@media (max-width: 450px) {
+  .paragraph,
+  .listItem {
+    font-size: 20px;
+  }
+}

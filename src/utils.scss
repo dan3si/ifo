@@ -23,6 +23,10 @@ $c-light-black: #2c2c2c;
 %heading {
   font-size: 56px;
   font-family: $heading-font;
+
+  @media (max-width: 450px) {
+    font-size: 48px;
+  }
 }
 
 %ifo-link {
