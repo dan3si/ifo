@@ -22,9 +22,8 @@
 
 .image {
   width: 100%;
-  max-width: 800px;
+  max-width: 1150px;
   margin: 48px auto 0;
-
 }
 
 .paragraph {
@@ -38,3 +37,8 @@
   }
 }
 
+@media (max-width: 450px) {
+  .paragraph {
+    font-size: 20px;
+  }
+}

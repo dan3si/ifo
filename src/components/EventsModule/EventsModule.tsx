@@ -32,7 +32,7 @@ export const Events = () => {
                 <div className={styles.imageWrapper}>
                   <img
                     className={styles.eventImage}
-                    src={`${API_URL}/events/images/${id}`}
+                    src={`${API_URL}/events/images/${id}/1`}
                     alt={title}
                   />
                 </div>
@@ -45,7 +45,10 @@ export const Events = () => {
                 >
                   <h3 className={styles.title}>{title}</h3>
                 </Link>
-                <p className={styles.eventDescription}>{description.slice(0, 200)}...</p>
+                <p className={styles.eventDescription}>
+                  {description.slice(0, 150)}
+                  {description.slice(0, 150) !== description && '...'}
+                </p>
               </div>
             </div>
           )
