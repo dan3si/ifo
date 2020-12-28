@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import styles from './LeadershipModule.module.scss';
 import { LeadershipCard } from './LeadershipCard';
-import OlesYaskoIMG from '../../images/leadership/Oles_Yasko.jpg';
-import VictoriaZhadkoIMG from '../../images/leadership/Victoria_Zhadko.jpg';
-import DmytroTavanetsIMG from '../../images/leadership/Dmytro_Tavanets.jpg';
+import OlesYaskoIMG from 'images/leadership/Oles_Yasko/1.jpg';
+import VictoriaZhadkoIMG from 'images/leadership/Victoria_Zhadko/1.jpg';
+import DmytroTavanetsIMG from 'images/leadership/Dmytro_Tavanets/1.jpg';
 import { LangContext } from 'global/LangContext';
 
 export const Leadership = () => {

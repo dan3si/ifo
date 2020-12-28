@@ -46,6 +46,7 @@ export const Event = ({ eventId }: Props) => {
               className={styles.image}
               src={`${API_URL}/events/images/${eventId}/${imageID + 1}`}
               alt={event.title}
+              key={imageID}
             />
           ))
         }

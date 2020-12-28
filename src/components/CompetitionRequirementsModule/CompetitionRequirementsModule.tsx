@@ -11,7 +11,7 @@ export const CompetitionRequirements = () => {
     <section className={styles.competitionRequirements} id="competitionRequirements">
       <div className={styles.container}>
         <h2 className={styles.heading}>{t('competitionRequirements_heading')}</h2>
-        <p className={styles.paragraph}>
+        <div className={styles.textContainer}>
           {t('competitionRequirements_tour1_firstPart')}
           <Link to="/" className={styles.link} onClick={() => scrollToBlock('request')}>
             {t('competitionRequirements_toForm')}
@@ -109,7 +109,7 @@ export const CompetitionRequirements = () => {
               </ol>
             </li>
           </ul>
-        </p>
+        </div>
       </div>
     </section>
   );
