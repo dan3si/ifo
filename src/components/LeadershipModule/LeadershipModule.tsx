@@ -3,7 +3,6 @@ import styles from './LeadershipModule.module.scss';
 import { LeadershipCard } from './LeadershipCard';
 import OlesYaskoIMG from 'images/leadership/Oles_Yasko/1.jpg';
 import VictoriaZhadkoIMG from 'images/leadership/Victoria_Zhadko/1.jpg';
-import DmytroTavanetsIMG from 'images/leadership/Dmytro_Tavanets/1.jpg';
 import { LangContext } from 'global/LangContext';
 
 export const Leadership = () => {
@@ -29,14 +28,6 @@ export const Leadership = () => {
             position={t('leadership_zhadko_position')}
             description={t('leadership_zhadko_description')}
             linkTo="/team/victoria_zhadko"
-          />
-          
-          <LeadershipCard
-            imgSRC={DmytroTavanetsIMG}
-            name={t('leadership_tavanets_name')}
-            position={t('leadership_tavanets_position')}
-            description={t('leadership_tavanets_description')}
-            linkTo="/team/dmytro_tavanets"
           />
         </div>
       </div>

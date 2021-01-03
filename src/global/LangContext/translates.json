@@ -107,18 +107,6 @@
     "en": "Ukrainian conductor",
     "ua": "Українська дириґентка"
   },
-  "leadership_tavanets_name": {
-    "en": "Dmytro Tavanets",
-    "ua": "Дмитро Таванець"
-  },
-  "leadership_tavanets_position": {
-    "en": "Executive director",
-    "ua": "Виконавчий директор"
-  },
-  "leadership_tavanets_description": {
-    "en": "Ukrainian pianist",
-    "ua": "Український пiанiст"
-  },
   "competition_heading": {
     "en": "Competition",
     "ua": "Конкурс"
@@ -330,14 +318,6 @@
   "personInfo_victoria_zhadko_text": {
     "en": "Honored Artist of Ukraine, conductor, guitarist. One of the first Ukrainian women conductors to receive state awards and international recognition. The phrase \"for the first time\" is often associated with her name: V. Zhadko is the first symphonic conductor in the history of Ukraine - a winner of international competitions, in addition, she's exceptional professional level in a unique combination with natural charisma, bright personality, artistry and feeling of music she was able to prove and confirm as many as 7 times victories in the most difficult and most prestigious world conducting competitions, including the competition. A. Toscanini in Italy, K. Kondrashin in Holland, M. Malko in Denmark, as well as S. Prokofiev in Russia, G. Fitelberg in Poland, and S. Turchak in Ukraine. \n Professor of Luhansk State Academy of Culture and Arts, Associate Professor of the National Music Academy of Ukraine. Associate Professor of Kharkiv National University of Arts. She teaches at the Odessa and Lviv conservatories. Founder of the first in Ukraine department of ancient and chamber music. She worked as the chief conductor of the Kharkiv Philharmonic Symphony Orchestra. Permanent member of the jury of international guitar competitions.",
     "ua": "Заслужена артистка України, диригент, гітаристка. Одна з перших українських жінок-дириґенток, що отримали державні відзнаки та міжнародне визнання. З її ім'ям часто пов'язується слово \"вперше\": В. Жадько є першим в історії України симфонічним дириґентом - лауреатом міжнародних конкурсів, до того ж свій винятковий професійний рівень в унікальному поєднанні з природною харизмою, яскравою індивідуальністю, артистизмом та відчуттям музики вона змогла довести й підтвердити аж 7-разовими перемогами на найскладніших і найпрестижніших світових дириґентських конкурсах, серед яких конкурс ім. А. Тосканіні в Італії, ім. К. Кондрашина в Голандії, ім. М. Малька в Данії, а також конкурси ім. С. Прокоф'єва в Росії, ім. Ґ. Фітельберґа в Польщі, та ім. С. Турчака в Україні. \n Професор Луганської державної академії культури і мистецтв, доцент Національної музичної академії України ім. П.І. Чайковського, доцент Харківського національного університету мистецтв ім. І.П. Котляревського. Займається викладацькою роботою в Одеській і Львівській консерваторіях. Засновник першої в Україні кафедри старовинної та камерної музики. Працювала головним диригентом симфонічного оркестру Харківської філармонії. Постійний член журі міжнародних гітарних конкурсів."
-  },
-  "personInfo_dmytro_tavanets_name": {
-    "en": "Dmytro Tavanets",
-    "ua": "Дмитро Таванець"
-  },
-  "personInfo_dmytro_tavanets_text": {
-    "en": "Pianist, Honored Artist of Ukraine, soloist and executive director of the National Ensemble of Soloists \"Kyivska Kamerata\". Founder and artistic director of the International Chamber Music Session (Kyiv). He graduated from the National Music Academy of Ukraine. P.I. Tchaikovsky. Laureate and diploma winner of all-Ukrainian and international competitions. \n Together with Oleksandra Zaitseva as a member of \"Kiev Piano Duo\" winner of numerous international competitions, performances at the festivals Tavaszi Festival (Budapest, Hungary), \"Copenhagen Summer Festival\" (Copenhagen, Denmark), \"Schubertiade\" (Roskilde, Denmark), Ohrid Summer Festival (Macedonia), New Music Marathon (Prague, Czech Republic), Warsaw Autumn (Poland) and many others.",
-    "ua": "Піаніст, заслужений артист України, соліст і виконавчий директор Національного ансамблю солістів «Київська камерата». Засновник і артистичний директор Міжнародного фестивалю камерної музики «Chamber music session» (м. Київ). Закінчив Національну музичну академію України ім. П.І. Чайковського. Лауреат і дипломант всеукраїнських і міжнародних конкурсів. \n Разом із Олександрою Зайцевою у складі “Kiev Piano Duo” лауреат численних міжнародних конкурсів, виступи на фестивалях Tavaszi Festival (Будапешт, Угорщина), “Copenhagen Summer Festival” (Копенгаген, Данія), “Schubertiade” (Розкільд, Данія), “Ohrid Summer Festival (Македонія), «Марафон нової музики» (Прага, Чехія), “Варшавська осінь (Польща) та багато інших."
   },
   "events_heading": {
     "en": "Events",

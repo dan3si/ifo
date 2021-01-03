@@ -3,19 +3,38 @@
 .promo {
   background: url(../../images/promo_background.jpg) center no-repeat;
   background-size: cover;
-  height: 100vh;
 }
 
 .container {
   @extend %container;
-  padding-top: 45vh;
+  height: 100vh;
+  position: relative;
 }
 
 .heading {
+  position: absolute;
+  bottom: 20vh;
+  width: 100%;
+  padding: 0 5px;
   color: $c-white;
   text-align: center;
   font-size: 94px;
   font-family: "Dancing Script", cursive;
+  background: rgba($color: #000, $alpha: 0.8);
+}
+
+.headingWord {
+  &:nth-child(1) {
+    color: #008bd0;
+  }
+  
+  &:nth-child(2) {
+    color: #ffdd00;
+  }
+
+  &:nth-child(3) {
+    color: #b2b2b2;
+  }
 }
 
 @media (max-width: 920px) {
@@ -24,7 +43,7 @@
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 550px) {
   .heading {
     font-size: 55px;
   }

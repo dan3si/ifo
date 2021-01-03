@@ -3,7 +3,6 @@ import styles from './PersonInfoModule.module.scss';
 import { LangContext } from 'global/LangContext';
 import OlesYaskoIMG from 'images/leadership/Oles_Yasko/2.jpg';
 import VictoriaZhadkoIMG from 'images/leadership/Victoria_Zhadko/2.jpg';
-import DmytroTavanetsIMG from 'images/leadership/Dmytro_Tavanets/2.jpg';
 
 interface Props {
   name: string;
@@ -19,9 +18,6 @@ export const PersonInfo = ({ name }: Props) => {
 
       case 'victoria_zhadko':
         return VictoriaZhadkoIMG;
-  
-      case 'dmytro_tavanets':
-        return DmytroTavanetsIMG;
 
       default:
         return '';
